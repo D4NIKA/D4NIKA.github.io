@@ -194,9 +194,25 @@ footer a:hover {
   line-height: 2.5;
 }
 
+.contact-container h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+}
+
 .contact-info {
   display: flex;
   flex-direction: row;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gulp-menu-img {
+  padding-left: 50px;
+  border-radius: 10px;
 }
 
 @media (max-width: 400px) {
@@ -212,6 +228,11 @@ footer a:hover {
     margin: 100px;
     font-size: 20px;
     font-weight: 500;
+  }
+
+  .contact-container {
+    display: block;
+    justify-content: center;
   }
 }
 
