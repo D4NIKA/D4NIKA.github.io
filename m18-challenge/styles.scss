@@ -31,18 +31,22 @@ svg {
   padding-bottom: 20px;
 }
 
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-}
-.navbar ul li a:hover {
-  text-decoration: underline;
-}
-.navbar ul li a li {
-  padding-left: 20px;
-  padding-right: 20px;
-  list-style: none;
+.navbar {
+  ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    li {
+      padding-left: 20px;
+      padding-right: 20px;
+      list-style: none;
+    }
+  }
 }
 
 .list-container {
@@ -59,18 +63,22 @@ svg {
 .about-us-link {
   color: var(--secondary-color);
   text-decoration: none;
-}
-.about-us-link:hover {
-  color: var(--secondary-color);
+
+  &:hover {
+    color: var(--secondary-color);
+  }
 }
 
-.about-us h2 {
-  font-family: var(--main-font);
-  font-weight: 800;
-  font-size: 40px;
-}
-.about-us h2 p {
-  line-height: 2.5;
+.about-us {
+  h2 {
+    font-family: var(--main-font);
+    font-weight: 800;
+    font-size: 40px;
+
+    p {
+      line-height: 2.5;
+    }
+  }
 }
 
 .button {
@@ -82,14 +90,15 @@ svg {
   background: var(--secondary-color);
   padding: 20px 20px 20px;
   border-radius: 10px;
-}
-.button:hover {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--secondary-color);
-  background: white;
-  transition: all 0.5s ease;
-  border: 1px solid var(--secondary-color);
+
+  &:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--secondary-color);
+    background: white;
+    transition: all 0.5s ease;
+    border: 1px solid var(--secondary-color);
+  }
 }
 
 .main-container {
@@ -123,15 +132,17 @@ footer {
   background: var(--main-color);
   padding: 20px 20px 20px;
   border-top: 10px solid var(--border-color);
-}
-footer a {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  color: white;
-  text-decoration: none;
-}
-footer a:hover {
-  color: white;
+
+  a {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
 }
 
 .products h1 {
@@ -240,4 +251,4 @@ footer a:hover {
     flex-direction: column;
     padding: 10px 10px 10px;
   }
-} /*# sourceMappingURL=styles.css.map *//*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
